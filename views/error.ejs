@@ -1,0 +1,12 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+<div class="row mt-3">
+  <div class="alert alert-danger col-8 offset-3" role="alert">
+    <!-- <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Danger:">
+      <use xlink:href="#exclamation-triangle-fill" />
+    </svg> -->
+
+    <p class="alert-heading"><%= err.statusCode %> &nbsp;&nbsp;&nbsp;&nbsp;<%= err.message %> </p>
+    <!-- <p><%= err.stack %></p>   this is not good to show the client our sever and system path -->
+  </div>
+</div>
